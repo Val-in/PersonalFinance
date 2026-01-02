@@ -1,19 +1,24 @@
 package model;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
+import java.util.UUID;
 
-public class Transaction {
+public class Transaction implements Serializable {
     private String category;
     private double amount;
     private boolean isIncome;
     private LocalDateTime timeStamp;
+    private static final long serialVersionUID = 1L;
+    private UUID id = UUID.randomUUID();
+
 
     public Transaction(String category, boolean isIncome, double amount, LocalDateTime timeStamp) {
         this.category = category;
         this.isIncome = isIncome;
         this.amount = amount;
-        this.timeStamp = timeStamp.now();
+        this.timeStamp = timeStamp != null ? timeStamp : LocalDateTime.now();
     }
 
     public String getCategory() {
@@ -63,4 +68,7 @@ public class Transaction {
     public int hashCode() {
         return Objects.hash(category, amount, isIncome, timeStamp);
     }
+
+    public UUID getId() { return id; }
+
 }

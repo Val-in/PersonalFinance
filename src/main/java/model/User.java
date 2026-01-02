@@ -10,7 +10,7 @@ public class User {
     public User(String username, String password) {
         this.username = username;
         this.password = password;
-        this.wallet = wallet;
+        this.wallet = new Wallet();
     }
 
     public String getUsername() {
@@ -42,11 +42,13 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(wallet, user.wallet);
+        return Objects.equals(username, user.username);
+
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(username, password, wallet);
+        return Objects.hash(username);
     }
+
 }

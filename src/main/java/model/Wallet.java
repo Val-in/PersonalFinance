@@ -1,13 +1,16 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Wallet {
+public class Wallet implements Serializable {
     private List<Transaction> transactions;
     private Map<String, Double> budgets;
+    private static final long serialVersionUID = 1L;
+
 
     public Wallet() {
         this.transactions = new ArrayList<>();
