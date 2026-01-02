@@ -1,9 +1,10 @@
 package storage;
 
-import model.User;
 import java.util.Map;
+import model.User;
 
 public interface UserStorage {
-    void saveUsers(Map<String, User> users);
-    Map<String, User> loadUsers();
+  void saveUsers(Map<String, User> users);
+
+  Map<String, User> loadUsers();
 }
