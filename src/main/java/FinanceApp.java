@@ -103,7 +103,7 @@ public class FinanceApp {
         System.out.println("8. Редактировать транзакцию");
         System.out.println("9. Расходы по выбранным категориям");
         System.out.println("10. Фильтрация по периоду");
-        System.out.println("11. Export stats");
+        System.out.println("11. Экспорт статистики");
 
         System.out.println("ВЫБЕРИТЕ действие");
     }
