@@ -1,23 +1,37 @@
 # PersonalFinance
 
-CLI приложение для управления личными финансами.
+A CLI application for managing personal finances.
 
-## Функции
-- Регистрация и вход пользователей
-- Добавление доходов и расходов
-- Переводы между пользователями
-- Установка бюджета по категориям
-- Просмотр статистики и уведомлений
-- Сохранение и загрузка данных
-- Экспорт статистики в файл
+## Features
 
+- User registration and login
 
-## Примеры команд
-- Регистрация: 1
-- Вход: 2
-- Добавить доход: 1 (в MainMenu)
-- Добавить расход: 2
-- Установить бюджет: 3
-- Просмотр статистики: 4
+- Adding income and expenses
+
+- Transfers between users
+
+- Setting budgets by category
+
+- Viewing statistics and notifications
+
+- Saving and loading data
+
+- Exporting statistics to a file
+
+## Command examples
+
+- Register: 1
+
+- Login: 2
+
+- Add income: 1 (in MainMenu)
+
+- Add expense: 2
+
+- Set budget: 3
+
+- View statistics: 4
+
 - HELP: 6
-- Выход: 5
+
+- Exit: 5
